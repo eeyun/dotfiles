@@ -1,0 +1,57 @@
+*foreground: #c7c8d2
+*background: #323a4e
+! Default
+! 0: black
+*color0: #000000
+*color8: #000000
+! 1: red
+*color1: #f33745
+*color9: #f33745
+! 2: green
+*color2: #27c97b
+*color10: #27c97b
+! 3: yellow
+*color3: #fedf57
+*color11: #fedf57
+! 4: blue
+*color4: #2f81f7
+*color12: #2f81f7
+! 5: magenta
+*color5: #ef468b
+*color13: #ef468b
+! 6: cyan
+*color6: #20d5ff
+*color14: #9451e5
+! 7: white
+*color7: #ffffff
+*color15: #ffffff
+
+!----------------------------------------------------
+! u r x v t
+
+URxvt*termName: rxvt-256color
+URxvt*geometry: 112x22
+URxvt*font: xft:Terminus:pixelsize=16,xft:Inconsolata\ for\ Powerline:pixelsize=16,xft:Anonymice\ Powerline:pixelsize=14
+URxvt*cursorBlink: true
+URxvt*url-launcher: /usr/bin/google-chrome
+URxvt*scrollBar: false
+URxvt*scrollColor: #000000
+URxvt*scrollStyle: plain
+URxvt*secondaryScroll: true
+URxvt*borderLess: false
+URxvt*borderColor: #323a4e
+URxvt*externalBorder: 0
+URxvt*internalBorder: 0
+URxvt*perl-ext-common: default,matcher,font-size
+URxvt*perl-lib: /usr/lib/urxvt/perl
+URxvt*matcher.button: 1
+URxvt*locale: true
+URxvt*utf8: 1
+URxvt*fading: 20
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.font-size.step: 4
+URxvt*depth: 32
+URxvt*background: [65]#323a4e

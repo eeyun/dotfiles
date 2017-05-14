@@ -1,0 +1,160 @@
+2017-04-16T02:13:35.834Z - info: Initializing local storage instance at path: /home/eeyun/.config/Slack/local-settings.json
+2017-04-16T02:13:36.030Z - info: persist/REHYDRATE 
+2017-04-16T02:13:36.031Z - info: Initializing local storage instance at path: /home/eeyun/.config/Slack/redux-state.json
+2017-04-16T02:13:36.032Z - info: UPDATE_SETTINGS : {
+  "hasMigratedData": {
+    "macgap": false,
+    "redux": true
+  }
+}
+2017-04-16T02:13:36.113Z - info: UPDATE_SETTINGS : {
+  "isDevMode": false,
+  "appVersion": "2.5.2",
+  "versionName": "Walking on a Dream",
+  "devEnv": null,
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "launchedWithLink": null,
+  "webappSrcPath": null,
+  "launchOnStartup": false,
+  "releaseChannel": "prod",
+  "openDevToolsOnStart": false,
+  "logFile": null,
+  "pretendNotReallyWindows10": false,
+  "isAeroGlassEnabled": false,
+  "platformVersion": {
+    "major": 4,
+    "minor": 10,
+    "build": 9
+  },
+  "isTitleBarHidden": false
+}
+2017-04-16T02:13:36.126Z - info: Showing a tray balloon with title: Welcome to Slack!
+2017-04-16T02:13:36.141Z - info: UPDATE_SETTINGS : {
+  "hasRunApp": true
+}
+2017-04-16T02:13:36.145Z - info: ADD_WINDOW : {
+  "windowId": 2,
+  "windowType": "MAIN"
+}
+2017-04-16T02:13:36.149Z - info: Loading windowMetrics: null
+2017-04-16T02:13:36.149Z - info: SAVE_WINDOW_SETTINGS : {
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+2017-04-16T02:13:36.167Z - info: UPDATE_SETTINGS : {
+  "PrefSSBFileDownloadPath": "/home/eeyun/Downloads"
+}
+2017-04-16T02:13:36.176Z - info: Welcome to Slack 2.5.2 x64
+2017-04-16T02:13:36.176Z - info: App load time: 508ms
+2017-04-16T02:13:36.177Z - info: SET_FULL_SCREEN : false
+2017-04-16T02:13:37.134Z - info: SET_NETWORK_STATUS : "online"
+2017-04-16T02:13:37.154Z - info: Main window finished load. Launched on login: false
+2017-04-16T02:13:38.159Z - info: SAVE_WINDOW_SETTINGS : {
+  "size": [
+    630,
+    1037
+  ],
+  "position": [
+    645,
+    10
+  ],
+  "isMaximized": false
+}
+2017-04-16T02:13:48.220Z - info: SHOW_WEBAPP_DIALOG : {
+  "dialogType": "prefs"
+}
+2017-04-16T02:14:20.210Z - info: ADD_NEW_TEAM : {
+  "id": "U1GMDTASX",
+  "name": "eeyun",
+  "team_id": "T0VC3850R",
+  "team_name": "habitat",
+  "team_url": "https://habitat-sh.slack.com/"
+}
+2017-04-16T02:14:20.223Z - info: SET_LOGIN_DIALOG : false
+2017-04-16T02:14:22.655Z - info: SET_TEAM_IDLE_TIMEOUT : {
+  "timeout": 43200,
+  "teamId": "T0VC3850R"
+}
+2017-04-16T02:14:24.812Z - info: SET_TEAM_IDLE_TIMEOUT : {
+  "timeout": 43200,
+  "teamId": "T0VC3850R"
+}
+2017-04-16T02:14:24.945Z - info: UPDATE_NO_DRAG_REGION : {
+  "region": {
+    "id": "search",
+    "width": 140,
+    "height": 34,
+    "top": 13.1875,
+    "left": 518
+  }
+}
+2017-04-16T02:14:25.288Z - info: SELECT_CHANNEL : "C0VBY57UP"
+2017-04-16T02:14:25.314Z - info: UPDATE_TEAM_THEME : {
+  "theme": {
+    "column_bg": "#F8F8FA",
+    "menu_bg": "#F8F8FA",
+    "active_item": "#CAD1D9",
+    "active_item_text": "#FFFFFF",
+    "hover_item": "#FFFFFF",
+    "text_color": "#383F45",
+    "active_presence": "#60D156",
+    "badge": "#FF8669"
+  },
+  "teamId": "T0VC3850R"
+}
+2017-04-16T02:14:26.165Z - info: UPDATE_TEAM_ICONS : {
+  "icons": {
+    "image_34": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_34.png",
+    "image_44": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_44.png",
+    "image_68": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_68.png",
+    "image_88": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_88.png",
+    "image_102": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_102.png",
+    "image_132": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_132.png",
+    "image_230": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_132.png",
+    "image_original": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_original.png"
+  },
+  "teamId": "T0VC3850R"
+}
+2017-04-16T02:14:26.600Z - info: UPDATE_UNREADS_INFO : {
+  "unreads": 0,
+  "unreadHighlights": 0,
+  "showBullet": true,
+  "teamId": "T0VC3850R"
+}
+2017-04-16T02:14:26.784Z - info: UPDATE_UNREADS_INFO : {
+  "unreads": 0,
+  "unreadHighlights": 0,
+  "showBullet": true,
+  "teamId": "T0VC3850R"
+}
+2017-04-16T02:14:26.792Z - info: UPDATE_UNREADS_INFO : {
+  "unreads": 1,
+  "unreadHighlights": 0,
+  "showBullet": true,
+  "teamId": "T0VC3850R"
+}
+2017-04-16T02:14:40.532Z - info: SHOW_WEBAPP_DIALOG : {
+  "dialogType": "prefs"
+}
+2017-04-16T02:20:10.191Z - info: Attempted to close the window, hiding due to run from tray
+2017-04-16T02:20:10.200Z - info: UPDATE_SETTINGS : {
+  "hasRunFromTray": true
+}
+2017-04-16T02:20:10.212Z - info: SHOW_TRAY_BALLOON : {
+  "title": "Why didn't Slack quit?",
+  "content": "Slack's set to stay running in the notification area. To change this, visit Preferences > Linux App."
+}
+2017-04-16T02:20:10.213Z - info: Showing a tray balloon with title: Why didn't Slack quit?
+2017-04-16T02:20:10.223Z - info: SET_FULL_SCREEN : false
+2017-04-16T02:22:21.330Z - info: Allowing window close because user chose to quit
+2017-04-16T02:22:21.332Z - info: Disposing application
+2017-04-16T02:22:21.333Z - info: REMOVE_WINDOW : 2
+2017-04-16T02:22:21.355Z - info: UPDATE_TEAM_USAGE : {
+  "T0VC3850R": 524233
+}

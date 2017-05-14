@@ -1,0 +1,5 @@
+2017-04-16T02:14:21.095Z - info: updateSuspendResume: true
+2017-04-16T02:14:22.653Z - info: SET_TEAM_IDLE_TIMEOUT : {
+  "timeout": 43200,
+  "teamId": "T0VC3850R"
+}

@@ -1,0 +1,12 @@
+2017-04-16T02:14:02.430Z - info: Window is unloading, winssb is no longer accessible
+2017-04-16T02:14:02.489Z - info: Window is unloading, winssb is no longer accessible
+2017-04-16T02:14:18.457Z - info: Window is unloading, winssb is no longer accessible
+2017-04-16T02:14:19.363Z - info: Window is unloading, winssb is no longer accessible
+2017-04-16T02:14:20.208Z - info: ADD_NEW_TEAM : {
+  "id": "U1GMDTASX",
+  "name": "eeyun",
+  "team_id": "T0VC3850R",
+  "team_name": "habitat",
+  "team_url": "https://habitat-sh.slack.com/"
+}
+2017-04-16T02:14:20.211Z - info: SET_LOGIN_DIALOG : false

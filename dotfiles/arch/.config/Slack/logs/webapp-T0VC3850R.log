@@ -1,0 +1,76 @@
+error: Calls failed to load, bailing
+info: 2017/4/15 21:14:21.255 didStartLoading called TSSSB.timeout_tim set for ms:60000
+info: 2017/4/15 21:14:22.124  booted! pri:0 version:1492278587 start_ms:1492308862119 (5ms ago)
+info: 2017/4/15 21:14:22.491  _onDOMReady
+info: 2017/4/15 21:14:22.491  session_load_count_client: 1
+info: 2017/4/15 21:14:22.495  Connecting to: wss://mpmulti-d1tz.slack-msgs.com/?flannel=1&token=REDACTED&start_args=%3Fagent%3Dwebapp_37d39a13fa9d46080b1b21a8cd708ac71bbb6b0c%26simple_latest%3Dtrue%26no_unreads%3Dtrue%26no_users%3Dtrue%26no_bots%3Dtrue%26cache_ts%3D0%26no_members%3D1%26presence_sub%3Dtrue%26mpim_aware%3Dtrue%26only_relevant_ims%3Dtrue%26canonical_avatars%3Dtrue%26eac_cache_ts%3Dtrue&version_uid=37d39a13fa9d46080b1b21a8cd708ac71bbb6b0c&_x_connection_log=&batch_presence_aware=1&no_annotations=1
+info: 2017/4/15 21:14:22.499  Initializing provisional MS connection and fetching rtm.start over the socket
+info: 2017/4/15 21:14:22.500  2017/4/15 21:14:22.500 didStartLoading called TSSSB.timeout_tim set for ms:30000
+warn: 2017/4/15 21:14:22.503  storage_version: does not match TS.storage.version:0.85 so flushing all our keys: is_compressed
+info: 2017/4/15 21:14:22.504  _disabled:false
+info: 2017/4/15 21:14:22.506  Setting calling_rtm_start to true
+info: 2017/4/15 21:14:22.506  Starting incremental boot
+info: 2017/4/15 21:14:22.646  2017/4/15 21:14:22.646 didStartLoading called TSSSB.timeout_tim set for ms:60000
+error: Calls failed to load, bailing
+info: 2017/4/15 21:14:23.396 didStartLoading called TSSSB.timeout_tim set for ms:60000
+info: 2017/4/15 21:14:24.193  booted! pri:0 version:1492278587 start_ms:1492308864187 (6ms ago)
+info: 2017/4/15 21:14:24.572  _onDOMReady
+info: 2017/4/15 21:14:24.572  session_load_count_client: 1
+info: 2017/4/15 21:14:24.576  Connecting to: wss://mpmulti-c2ug.slack-msgs.com/?flannel=1&token=REDACTED&start_args=%3Fagent%3Dwebapp_37d39a13fa9d46080b1b21a8cd708ac71bbb6b0c%26simple_latest%3Dtrue%26no_unreads%3Dtrue%26no_users%3Dtrue%26no_bots%3Dtrue%26cache_ts%3D0%26no_members%3D1%26presence_sub%3Dtrue%26mpim_aware%3Dtrue%26only_relevant_ims%3Dtrue%26canonical_avatars%3Dtrue%26eac_cache_ts%3Dtrue&version_uid=37d39a13fa9d46080b1b21a8cd708ac71bbb6b0c&_x_connection_log=&batch_presence_aware=1&no_annotations=1
+info: 2017/4/15 21:14:24.579  Initializing provisional MS connection and fetching rtm.start over the socket
+info: 2017/4/15 21:14:24.581  2017/4/15 21:14:24.581 didStartLoading called TSSSB.timeout_tim set for ms:30000
+warn: 2017/4/15 21:14:24.583  TS.storage.fetchLastEventTS() is empty so flushing channel data
+info: 2017/4/15 21:14:24.584  _disabled:false
+info: 2017/4/15 21:14:24.586  Setting calling_rtm_start to true
+info: 2017/4/15 21:14:24.586  Starting incremental boot
+info: 2017/4/15 21:14:24.802  2017/4/15 21:14:24.802 didStartLoading called TSSSB.timeout_tim set for ms:60000
+info: 2017/4/15 21:14:25.160  TS.model.supports_user_bot_caching:true
+TS.storage.isUsingMemberBotCache():false
+args.cache_ts:undefined
+api args: {"canonical_avatars":true,"include_full_users":true,"count":49,"ignore_replies":true,"no_members":true,"token":"REDACTED","_attempts":1}
+members from LS:0, from updated_users in rtm.start:10 (slackbot will always be here)
+bots from LS:0, from updated_bots in rtm.start:0
+info: 2017/4/15 21:14:25.190  open channels/groups/ims:1 initial_msgs_cnt:42 subsequent_msgs_cnt:84 special_initial_msgs_cnt:84
+info: 2017/4/15 21:14:25.550  Provisional WebSocket received a message of type hello
+info: 2017/4/15 21:14:25.580  Got rtm.start data but need to fetch 8 members
+info: 2017/4/15 21:14:25.600  Provisional WebSocket received a message of type accounts_changed
+info: 2017/4/15 21:14:25.600  Provisional WebSocket received a message of type reconnect_url
+info: 2017/4/15 21:14:25.102  Got 8 members for rtm.start :tada:
+info: 2017/4/15 21:14:25.103  Setting calling_rtm_start to false (after rtm.start from Flannel)
+info: 2017/4/15 21:14:25.290  Finalizing incremental boot
+warn: 2017/4/15 21:14:25.291  1104ms from first html to login_sig.dispatch()
+info: 2017/4/15 21:14:26.960  User id: U1GMDTASX, team id: T0VC3850R
+info: 2017/4/15 21:14:26.151  TS.model.supports_user_bot_caching:true
+TS.storage.isUsingMemberBotCache():false
+args.cache_ts:undefined
+api args: {}
+members from LS:0, from updated_users in rtm.start:8 (slackbot will always be here)
+bots from LS:0, from updated_bots in rtm.start:0
+info: 2017/4/15 21:14:26.154  open channels/groups/ims:17 initial_msgs_cnt:42 subsequent_msgs_cnt:84 special_initial_msgs_cnt:84
+info: 2017/4/15 21:14:26.156  Completed incremental boot
+info: 2017/4/15 21:14:26.514  Finalizing provisional MS connection
+info: 2017/4/15 21:14:26.515  MS WS connected!
+info: 2017/4/15 21:14:26.516  Hello msg recvd, since_last_pong_ms:1492308866516
+info: 2017/4/15 21:14:26.516  host_id: flannel64-4314, server_version: build-id:638-23335c262fd418dd01e577bf96616d6c82aa3717-build-slave32-2017-04-11T13:17:55-0700 golang:go1.8
+info: 2017/4/15 21:14:26.524  Hiding the reconnection banner because we are connected
+info: 2017/4/15 21:14:26.616  2017/4/15 21:14:26.616 didFinishLoading called, clearing TSSSB.timeout_tim
+info: 2017/4/15 21:14:26.617  User id: U1GMDTASX, team id: T0VC3850R
+info: 2017/4/15 21:14:26.791  Finished processing users.counts
+info: 2017/4/15 21:14:26.791  0 IMs with unreads, 0 total dm_count
+error: Uncaught Error: Cannot call function 'send' on missing remote object 45
+Error: Cannot call function 'send' on missing remote object 45
+    at throwRPCError (/usr/lib/slack/resources/electron.asar/browser/rpc-server.js:143:17)
+    at EventEmitter.<anonymous> (/usr/lib/slack/resources/electron.asar/browser/rpc-server.js:339:7)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:201:7)
+    at WebContents.<anonymous> (/usr/lib/slack/resources/electron.asar/browser/api/web-contents.js:231:13)
+    at emitTwo (events.js:106:13)
+    at WebContents.emit (events.js:191:7)
+info: 2017/4/15 21:14:47.231  going back in time callstack
+Stacktrace: ↴
+ at Object.getStackTrace (https://cdx.slack-edge.com/43dc7/js/rollup-core_required_ts.js:1:3403)
+at Object.setLastRead (https://cdx.slack-edge.com/e3954/js/rollup-secondary_a_required.js:4:16043)
+at Object.markReadMsg (https://cdx.slack-edge.com/e3954/js/rollup-secondary_a_required.js:4:17381)
+at Object.markMostRecentReadMsg (https://cdx.slack-edge.com/e3954/js/rollup-secondary_a_required.js:4:17120)
+at Object.markMostRecentReadMsgInActive (https://cdx.slack-edge.com/86895/js/rollup-client.js:8:6726)
+at checkUnreads (https://cdx.slack-edge.com/86895/js/rollup-client.js:14:25804)

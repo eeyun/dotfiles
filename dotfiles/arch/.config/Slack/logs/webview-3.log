@@ -1,0 +1,78 @@
+2017-04-16T02:14:23.343Z - info: updateSuspendResume: true
+2017-04-16T02:14:24.809Z - info: SET_TEAM_IDLE_TIMEOUT : {
+  "timeout": 43200,
+  "teamId": "T0VC3850R"
+}
+2017-04-16T02:14:24.944Z - info: UPDATE_NO_DRAG_REGION : {
+  "region": {
+    "id": "search",
+    "width": 140,
+    "height": 34,
+    "top": 13.1875,
+    "left": 518
+  }
+}
+2017-04-16T02:14:25.287Z - info: SELECT_CHANNEL : "C0VBY57UP"
+2017-04-16T02:14:25.313Z - info: UPDATE_TEAM_THEME : {
+  "theme": {
+    "column_bg": "#F8F8FA",
+    "menu_bg": "#F8F8FA",
+    "active_item": "#CAD1D9",
+    "active_item_text": "#FFFFFF",
+    "hover_item": "#FFFFFF",
+    "text_color": "#383F45",
+    "active_presence": "#60D156",
+    "badge": "#FF8669"
+  },
+  "teamId": "T0VC3850R"
+}
+2017-04-16T02:14:26.164Z - info: UPDATE_TEAM_ICONS : {
+  "icons": {
+    "image_34": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_34.png",
+    "image_44": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_44.png",
+    "image_68": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_68.png",
+    "image_88": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_88.png",
+    "image_102": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_102.png",
+    "image_132": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_132.png",
+    "image_230": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_132.png",
+    "image_original": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-05-27/46270234819_31dbd7b024d2664e807c_original.png"
+  },
+  "teamId": "T0VC3850R"
+}
+2017-04-16T02:14:26.599Z - info: UPDATE_UNREADS_INFO : {
+  "unreads": 0,
+  "unreadHighlights": 0,
+  "showBullet": true,
+  "teamId": "T0VC3850R"
+}
+2017-04-16T02:14:26.784Z - info: UPDATE_UNREADS_INFO : {
+  "unreads": 0,
+  "unreadHighlights": 0,
+  "showBullet": true,
+  "teamId": "T0VC3850R"
+}
+2017-04-16T02:14:26.786Z - info: UPDATE_UNREADS_INFO : {
+  "unreads": 1,
+  "unreadHighlights": 0,
+  "showBullet": true,
+  "teamId": "T0VC3850R"
+}
+2017-04-16T02:14:27.211Z - info: Raw Locale list: ["C","en_US.utf8","POSIX",""]
+2017-04-16T02:14:27.211Z - info: Filtered Locale list: ["en_US"]
+2017-04-16T02:14:27.211Z - info: Counts: {"en":["en_US"]}
+2017-04-16T02:14:27.211Z - info: Setting en
+2017-04-16T02:14:27.212Z - info: Result: {"en":"en-US"}
+2017-04-16T02:14:27.213Z - info: Requesting to load en-US, alternatives are ["en-US","en-US","en-US"]
+2017-04-16T02:14:27.214Z - info: Loading dictionary for language en-US
+2017-04-16T02:14:27.215Z - info: Actually downloading https://redirector.gvt1.com/edgedl/chrome/dict/en-us-7-1.bdic
+2017-04-16T02:14:27.230Z - info: Raw Locale list: ["C","en_US.utf8","POSIX",""]
+2017-04-16T02:14:27.230Z - info: Filtered Locale list: ["en_US"]
+2017-04-16T02:14:27.230Z - info: Counts: {"en":["en_US"]}
+2017-04-16T02:14:27.230Z - info: Setting en
+2017-04-16T02:14:27.230Z - info: Result: {"en":"en-US"}
+2017-04-16T02:14:27.230Z - info: Requesting to load en-US, alternatives are ["en-US","en-US","en-US"]
+2017-04-16T02:14:27.231Z - info: Loading dictionary for language en-US
+2017-04-16T02:14:27.231Z - info: Actually downloading https://redirector.gvt1.com/edgedl/chrome/dict/en-us-7-1.bdic
+2017-04-16T02:14:44.823Z - info: Unloading spellchecker
+2017-04-16T02:14:48.854Z - info: Unloading spellchecker
+2017-04-16T02:20:10.228Z - info: Unloading spellchecker

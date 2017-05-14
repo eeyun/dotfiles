@@ -1,0 +1,17 @@
+2017/05/10-17:10:11.882 11643 Reusing MANIFEST /home/eeyun/.config/Atom/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2017/05/10-17:10:11.882 11643 Recovering log #240
+2017/05/10-17:10:11.889 11643 Level-0 table #243: started
+2017/05/10-17:10:11.906 11643 Level-0 table #243: 1578917 bytes OK
+2017/05/10-17:10:11.910 11643 Delete type=0 #240
+2017/05/10-17:10:11.910 11683 Compacting 4@0 + 1@1 files
+2017/05/10-17:10:11.939 11683 Generated table #245@0: 3 keys, 25143 bytes
+2017/05/10-17:10:11.939 11683 Compacted 4@0 + 1@1 files => 25143 bytes
+2017/05/10-17:10:11.942 11683 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/05/10-17:10:11.943 11683 Delete type=2 #241
+2017/05/10-17:10:11.943 11683 Delete type=2 #238
+2017/05/10-17:10:11.943 11683 Delete type=2 #243
+2017/05/10-17:10:11.943 11683 Delete type=2 #234
+2017/05/10-17:10:11.943 11683 Delete type=2 #236
+2017/05/10-17:18:45.714 11683 Level-0 table #247: started
+2017/05/10-17:18:45.731 11683 Level-0 table #247: 1930469 bytes OK
+2017/05/10-17:18:45.734 11683 Delete type=0 #244

@@ -1,0 +1,21 @@
+2017-04-16T02:13:37.133Z - info: SET_NETWORK_STATUS : "online"
+2017-04-16T02:13:37.191Z - info: Checking network connection to Slack...
+2017-04-16T02:13:40.522Z - warn: Skipping empty page check for  https://slack.com/signin
+2017-04-16T02:14:02.485Z - info: WebView received redirect request from https://slack.com/signin to https://habitat-sh.slack.com/
+2017-04-16T02:14:04.675Z - warn: Skipping empty page check for  https://habitat-sh.slack.com/
+2017-04-16T02:14:19.359Z - info: WebView received redirect request from https://habitat-sh.slack.com/ to https://slack.com/checkcookie?redir=https%3A%2F%2Fhabitat-sh.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D
+2017-04-16T02:14:19.489Z - info: WebView received redirect request from https://slack.com/checkcookie?redir=https%3A%2F%2Fhabitat-sh.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D to https://habitat-sh.slack.com/signin?ssb_success=1&ssb_relogin=
+2017-04-16T02:14:20.286Z - warn: Attempting to update LoginView when unmounted
+2017-04-16T02:14:20.286Z - warn: Attempting to update FullScreenModal when unmounted
+2017-04-16T02:14:20.286Z - warn: Attempting to update WebViewContext when unmounted
+2017-04-16T02:14:22.547Z - info: Bugsnag user: U1GMDTASX
+2017-04-16T02:14:22.674Z - warn: Attempting to update TeamView when unmounted
+2017-04-16T02:14:22.674Z - warn: Attempting to update LoadingScreen when unmounted
+2017-04-16T02:14:22.674Z - warn: Attempting to update WebViewContext when unmounted
+2017-04-16T02:14:26.287Z - warn: Skipping empty page check for  https://habitat-sh.slack.com/messages/C0VBY57UP/
+2017-04-16T02:14:31.141Z - warn: Skipping empty page check for  https://habitat-sh.slack.com/messages/C0VBY57UP/
+2017-04-16T02:14:32.194Z - warn: Skipping empty page check for  https://habitat-sh.slack.com/messages/C0VBY57UP/
+2017-04-16T02:22:21.354Z - info: Team T0VC3850R was active for 524233
+2017-04-16T02:22:21.354Z - info: UPDATE_TEAM_USAGE : {
+  "T0VC3850R": 524233
+}

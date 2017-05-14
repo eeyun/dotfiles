@@ -1,0 +1,225 @@
+font pango:Roboto Regular 12
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# colours
+
+set $bar_bg #e7e8eb
+set $bar_fg #727272
+set $bar_hl #000000
+set $bar_nt #e53935
+set $win_hl #e7e8eb
+set $win_bg #000000
+
+# windows
+
+gaps inner 11
+gaps outer 0
+smart_borders on
+#smart_gaps on
+new_window pixel 2
+hide_edge_borders both
+new_float normal 0
+
+set $up l
+set $down k
+set $left j
+set $right semicolon
+
+set $mod Mod1
+
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec urxvtc
+
+# kill focused window
+bindsym $mod+c kill
+
+# start dmenu (a program launcher)
+bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+w exec --no-startup-id rofi -show window
+
+# change focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
+
+# Name the workspaces
+set $tag1 "1"
+set $tag2 "2"
+set $tag3 "3"
+set $tag4 "4"
+set $tag5 "5"
+
+# switch to workspace
+bindsym $mod+1 workspace $tag1
+bindsym $mod+2 workspace $tag2
+bindsym $mod+3 workspace $tag3
+bindsym $mod+4 workspace $tag4
+bindsym $mod+5 workspace $tag5
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $tag1
+bindsym $mod+Shift+2 move container to workspace $tag2
+bindsym $mod+Shift+3 move container to workspace $tag3
+bindsym $mod+Shift+4 move container to workspace $tag4
+bindsym $mod+Shift+5 move container to workspace $tag5
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+
+        bindsym $left       resize shrink width 10 px or 10 ppt
+        bindsym $down       resize grow height 10 px or 10 ppt
+        bindsym $up         resize shrink height 10 px or 10 ppt
+        bindsym $right      resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left        resize shrink width 10 px or 10 ppt
+        bindsym Down        resize grow height 10 px or 10 ppt
+        bindsym Up          resize shrink height 10 px or 10 ppt
+        bindsym Right       resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+
+# Set window border color i3wm Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        status_command i3blocks
+	i3bar_command i3bar -t
+	position bottom
+	mode dock
+	tray_output none
+	hidden_state hide
+	modifier $mod
+	height 23
+	colors {
+		background $bar_bg
+                statusline $bar_fg
+		separator  $bar_bg
+
+		#<colorclass>      <border>  <bgrnd>  <text>
+                focused_workspace  $bar_bg   $bar_bg  $bar_hl
+                active_workspace   $bar_bg   $bar_bg  $bar_hl
+                inactive_workspace $bar_bg   $bar_bg  $bar_fg
+                urgent_workspace   $bar_bg   $bar_bg  $bar_nt
+                binding_mode       $bar_bg   $bar_bg  $bar_hl
+   }
+}
+
+# Custom Keybinds
+bindsym $mod+Shift+q exec --no-startup-id sh  ~/.i3/i3lock.sh && sleep 0.5 && systemctl suspend
+# bindsym $mod+Shift+l exec --no-startup-id sh  ~/.i3/i3lock.sh 
+ bindsym Control+$mod+l exec sh ~/.i3/i3lock.sh
+bindsym Control+$mod+p exec scrot '%Y-%m-%d-%T_$wx$h-scrot.png' -e 'mv $f ~/Pictures/screenshots/'
+bindsym $mod+Shift+s sticky toggle
+bindsym $mod+Shift+b exec uzbl-tabbed 
+
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 2%+ unmute #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 2%- unmute #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle # mute sound
+
+# Monitor Backlight controls
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 #increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 #increase screen brightness
+
+# Keyboard Backlight controls
+bindsym XF86KbdBrightnessDown exec --no-startup-id sudo keyboard-backlight down
+bindsym XF86KbdBrightnessUp exec --no-startup-id sudo keyboard-backlight up 
+
+gaps inner 10
+bindsym Mod4+plus gaps inner all plus 5
+bindsym Mod4+minus gaps inner all minus 5
+bindsym Mod4+0 gaps inner all set 0
+
+for_window [title="FTerm"] floating enable
+bindsym $mod+Shift+Return exec urxvtc 
+
+for_window [title="MPV"] floating enable sticky enable move absolute position 1px 21px 
+
+#for_window [class="^.*"] border pixel 2
+
+
+# Custom Sparkles
+new_window none
+client.background #323a4e
+
+# class                 border  backgr. text    indictr child_border
+client.focused          #ffffff #f1f1f1 #565656 #424242 $win_hl
+client.focused_inactive #333333 #5f676a #f5f5f5 #333333 $win_bg
+client.unfocused        #333333 #222222 #888888 #333333 $win_bg
+client.urgent           #2f343a #900000 #ffffff #2f343a #900000
+client.placeholder #000000 #0c0c0c #ffffff #000000 #0c0c0c

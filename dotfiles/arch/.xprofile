@@ -1,0 +1,10 @@
+#!/bin/bash
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+
+urxvtd -q -o -f
+
+feh --randomize --bg-fill ~/.wallpapers/* 
+
+exec compton & #--config ~/.config/compton/compton.conf &
+exec i3

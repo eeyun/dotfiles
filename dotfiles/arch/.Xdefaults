@@ -1,0 +1,89 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #FFffffff, #e7e8eb, #ffffff
+rofi.color-normal: #ffffff, #ababb9, #ffffff, #ffffff, #50b975
+rofi.color-active: #ffffff, #268bd2, #ffffff, #268bd2, #fdf6e3
+rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
+rofi.depth: 32
+rofi.opacity: 50
+
+! clean up urxvt, add keybinds
+URxvt.intensityStyles: false
+URxvt.scrollBar: false
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.internalBorder: 8
+
+! font
+URxvt.font: xft:Roboto Mono:pixelsize=14
+!URxvt*font: xft:Source\ Code\ Pro:size=11:antialias=true:hinting=true, xft:FontAwesome:pixelsize=11
+!URxvt.letterSpace: 1
+
+! transparency
+URxvt.transparent:	false
+URxvt.shading:		6
+
+! make otf / ttf fonts look pretty.  does not matter if you are using a bitmap font.
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+Xft.dpi: 96
+
+! clickable links, clipboard support, mouse wheel support, and on the fly font resizing
+! you will need to install the relevent perl extensions for these to work
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard,resize-font
+URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline Bold fg5
+
+!URxvt*.foreground:  #383a42
+URxvt*.foreground:  #ffffff
+URxvt*.background:  [75]#323a4e
+URxvt*depth: 32
+*.cursorColor: #bfceff
+!
+! Black
+*.color0:      #383a42
+*.color8:      #4f525e
+!
+! Red
+*.color1:      #e45649
+*.color9:      #e06c75
+!
+! Green
+*.color2:      #50a14f
+*.color10:     #98c379
+!
+! Yellow
+*.color3:      #c18401
+*.color11:     #e5c07b
+!
+! Blue
+*.color4:      #0184bc
+*.color12:     #61afef
+!
+! Magenta
+*.color5:      #a626a4
+*.color13:     #c678dd
+!
+! Cyan
+*.color6:      #0997b3
+*.color14:     #56b6c2
+!
+! White
+*.color7:      #fafafa
+*.color15:     #ffffff
+!
+! Bold, Italic, Underline
+*.colorBD:     #abb2bf
+!*.colorIT:
+!*.colorUL:
+
+URxvt.resize-font.bigger: C-Up
+URxvt.resize-font.smaller: C-Down

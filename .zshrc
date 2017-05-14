@@ -1,107 +1,124 @@
-# Path to your oh-my-zsh installation.
+#                 ██                    
+#                ░██                    
+#  ██████  ██████░██      ██████  █████ 
+# ░░░░██  ██░░░░ ░██████ ░░██░░█ ██░░░██
+#    ██  ░░█████ ░██░░░██ ░██ ░ ░██  ░░ 
+#   ██    ░░░░░██░██  ░██ ░██   ░██   ██
+#  ██████ ██████ ░██  ░██░███   ░░█████ 
+# ░░░░░░ ░░░░░░  ░░   ░░ ░░░     ░░░░░  
+zstyle :compinstall filename '~/.zshrc'
+autoload -Uz compinit
+compinit
+
 export ZSH=/home/eeyun/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-source ~/.oh-my-zsh
-source /home/eeyun/.oh-my-zsh/themes/minimal/minimal.zsh
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+LS_COLORS='di=31:fi=32:ln=36:pi=1;33:so=1;34:bd=1;35:cd=34:or=30:mi=30:ex=1;32'
 
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+#SCRIPTS
+export PATH=$HOME/bin:$PATH
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+export EDITOR="vim"
+export BROWSER="firefox"
+export RHISK_COMM="zenbu"
+export LS_COLORS
 
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+source $ZSH/oh-my-zsh.sh
+#HISTORY
+HISTFILE=$HOME/.zhist
+HISTSIZE=1000
+SAVEHIST=1000
+#NO DUPES
+setopt HIST_IGNORE_DUPS
 
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+#PROMPT
+PROMPT="%K{8}%F{11} » %K{0}%F{6} [%F{7}%1~%F{6}]%F{2};;%f%k "
 
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+#ZSH SYNTAX HIGHTLIGHTING
+ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=red.bold,standout
+ZSH_HIGHLIGHT_STYLES[reserved-word]=fg=cyan,bold
+ZSH_HIGHLIGHT_STYLES[alias]=fg=none
+ZSH_HIGHLIGHT_STYLES[builtin]=fg=none
+ZSH_HIGHLIGHT_STYLES[function]=fg=white
+ZSH_HIGHLIGHT_STYLES[command]=fg=none
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=white,bold
+ZSH_HIGHLIGHT_STYLES[commandseparator]=fg=green,bold
+ZSH_HIGHLIGHT_STYLES[hashed-command]=fg=blue
+ZSH_HIGHLIGHT_STYLES[path]=fg=white,bold
+ZSH_HIGHLIGHT_STYLES[path_pathseparator]=fg=red,bold
+ZSH_HIGHLIGHT_STYLES[path_prefix]=fg=yellow
+ZSH_HIGHLIGHT_STYLES[path_approx]=fg=yellow,bold
+ZSH_HIGHLIGHT_STYLES[globbing]=fg=blue,bold
+ZSH_HIGHLIGHT_STYLES[history-expansion]=fg=red,standout
+ZSH_HIGHLIGHT_STYLES[single-hyphen-option]=fg=red
+ZSH_HIGHLIGHT_STYLES[double-hyphen-option]=fg=red
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument]=fg=white
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]=fg=green
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=green
+ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]=fg=magenta
+ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]=fg=green
+ZSH_HIGHLIGHT_STYLES[assign]=fg=white,bold
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+#ALIAS
+alias ..='cd ..'
+alias q='exit'
+alias c='clear'
+alias ls='ls -ahF --color=auto'
+alias mv='mv -v'
+alias cp='cp -v'
+alias df='df -h'
+alias ps='ps -ef'
 
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+#PACMAN
+alias install='sudo pacman -S'
+alias remove='sudo pacman -Rs'
+alias update='sudo pacman -Syu'
+alias search='sudo pacman -Ss'
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+alias pkgcnt='pacman -Q | wc -l'
 
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+#PATHS
+alias bin='cd $HOME/bin'
+alias documents='cd $HOME/documents'
+alias downloads='cd $HOME/downloads'
+alias images='cd $HOME/images'
+alias music='cd $HOME/music'
+alias videos='cd $HOME/videos'
 
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+#OTHER
+alias v='vim'
+alias mktar='tar -cvzf'
+alias scr='screenshot'
+alias vol='pulsemixer'
+alias tcli='transmission-cli'
+alias rsync='rsync -rtv'
+alias colorz='colorz -n 8'
+alias rec='yaxg -w -D 2 -f $HOME/videos/screencasts/%d%b2k%y-%H%M%S'
+alias highlight='highlight --out-format=ansi'
+alias qr='qrencode -t UTF8'
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+#FUNCTIONS
+ioup_clear() {
+    for file in `ioup -l | awk '{print $1}'`; do
+        ioup -r $file
+    done
+}
 
-# User configuration
+ix() {
+    cat "$1" | curl -F 'f:1=<-' -F 'read:1=2' ix.io 
+}
 
-# export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-# export MANPATH="/usr/local/man:$MANPATH"
+getip() {
+    w3m -no-cookie -dump "https://duckduckgo.com/?q=what+is+my+ip+address&t=ffab&ia=answer" | awk '/address is/ {print $5}' | head -1
+}
 
-#source $ZSH/oh-my-zsh.sh
+mtp-mount() {
+    gvfs-mount -li | awk -F= '{if(index($2,"mtp") == 1)system("gvfs-mount "$2)}'
+}
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias plan_check="shellcheck --shell=bash --exclude=SC1090,SC1091,SC2034,SC2039,SC2148,SC2153,SC2154,SC2140 "
-alias rake='noglob rake'
-
-export RUST_SRC_PATH=/usr/local/src/rust/src
-export PATH=$PATH:~/bin:~/.cargo/bin
-export TERM=xterm-256color
-export EDITOR=vim
-
-synclient TapButton2=0
-synclient TapButton1=0
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f /home/eeyun/Downloads/google-cloud-sdk/path.zsh.inc ]; then
-  source '/home/eeyun/Downloads/google-cloud-sdk/path.zsh.inc'
-fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f /home/eeyun/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/home/eeyun/Downloads/google-cloud-sdk/completion.zsh.inc'
-fi
-
-# added by travis gem
-[ -f /home/eeyun/.travis/travis.sh ] && source /home/eeyun/.travis/travis.sh
+separator() {
+    for ((x = 0; x < $(tput cols); x++)); do
+        printf %s "$(tput setaf 0)█$(tput sgr0)"
+    done
+}

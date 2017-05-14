@@ -1,0 +1,251 @@
+# i3 config file (v4)
+#
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+#
+# This config file uses keycodes (bindsym) and was written for the QWERTY
+# layout.
+#
+# To get a config file with the same key positions, but for your current
+# layout, use the i3-config-wizard
+#
+
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+font xft:terminus 12
+
+# This font is widely installed, provides lots of unicode glyphs, right-to-left
+# text rendering and scalability on retina/hidpi displays (thanks to pango).
+#font pango:DejaVu Sans Mono 8
+
+# Before i3 v4.8, we used to recommend this one as the default:
+# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# The font above is very space-efficient, that is, it looks good, sharp and
+# clear in small sizes. However, its unicode glyph coverage is limited, the old
+# X core fonts rendering does not support right-to-left and this being a bitmap
+# font, it doesn’t scale on retina/hidpi displays.
+
+# use these keys for focus, movement, and resize directions when reaching for
+# the arrows is not convenient
+set $up l
+set $down k
+set $left j
+set $right semicolon
+
+# Lets set the modifier to a variable so we can switch it easily
+set $mod Mod4
+
+# use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec urxvtc
+
+# kill focused window
+bindsym $mod+c kill
+
+# start dmenu (a program launcher)
+bindsym $mod+d exec rofi -show run
+# There also is the (new) i3-dmenu-desktop which only displays applications
+# shipping a .desktop file. It is a wrapper around dmenu, so you need that
+# installed.
+# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# change focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
+
+# Name the workspaces
+# customize workspace names
+set $tag1 1:
+set $tag2 2:
+set $tag3 3:
+set $tag4 4:
+set $tag5 5:
+set $tag6 6:
+set $tag7 7:
+set $tag8 8:
+set $tag9 9:
+
+
+assign [class="URxvt"] $tag1
+assign [class="Pcmanfm"] $tag2
+assign [class="Lxappearance"] $tag2
+assign [class="Firefox"] $tag3
+assign [class="Vlc"] $tag4
+assign [class="mpv"] $tag4
+assign [class="Gnome-mplayer"] $tag4
+assign [class="MPlayer"] $tag4
+assign [class="medit"] $tag5
+assign [class="Audacity"] $tag5
+assign [class="Audacious"] $tag5
+assign [class="Nitrogen"] $tag5
+# assign [class="Gcolor2"] $tag5
+assign [class="Evince"] $tag5
+assign [class="Geary"] $tag5
+assign [class="Lmms"] $tag5
+assign [class="Gimp"] $tag6
+assign [class="VirtualBox"] $tag6
+assign [class="GParted"] $tag6
+assign [class="Rawtherapee"] $tag6
+assign [class="Gpodder"] $tag7
+
+
+# switch to workspace
+bindsym $mod+1 workspace $tag1
+bindsym $mod+2 workspace $tag2
+bindsym $mod+3 workspace $tag3
+bindsym $mod+4 workspace $tag4
+bindsym $mod+5 workspace $tag5
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $tag1
+bindsym $mod+Shift+2 move container to workspace $tag2
+bindsym $mod+Shift+3 move container to workspace $tag3
+bindsym $mod+Shift+4 move container to workspace $tag4
+bindsym $mod+Shift+5 move container to workspace $tag5
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+
+        bindsym $left       resize shrink width 10 px or 10 ppt
+        bindsym $down       resize grow height 10 px or 10 ppt
+        bindsym $up         resize shrink height 10 px or 10 ppt
+        bindsym $right      resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left        resize shrink width 10 px or 10 ppt
+        bindsym Down        resize grow height 10 px or 10 ppt
+        bindsym Up          resize shrink height 10 px or 10 ppt
+        bindsym Right       resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+
+# Set window border color i3wm Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+    separator_symbol "■"
+colors {
+        background #3C4254
+        statusline #FEDDD0
+        separator #D8686D
+
+        focused_workspace  #D8686D #D8686D #3C4254
+        active_workspace   #D8686D #D8686D #3C4254
+        inactive_workspace #3C4254 #3C4254 #FEDDD0
+        urgent_workspace   #3C4254 #3C4254 #FEDDD0
+    }
+	position top
+	i3bar_command i3bar -t
+    status_command conky -c $HOME/.i3/conky/conkyrc
+    font xft:Terminus, FontAwesome 11
+}
+
+# Custom Keybinds
+bindsym Control+$mod+l exec sh ~/.i3/i3lock.sh
+bindsym $mod+Shift+q exec --no-startup-id sh  ~/.i3/i3lock.sh && sleep 0.5 && sudo /usr/sbin/pm-suspend
+bindsym Control+$mod+p exec scrot '%Y-%m-%d-%T_$wx$h-scrot.png' -e 'mv $f ~/Pictures/screenshots/'
+bindsym $mod+Shift+s sticky toggle
+bindsym $mod+Shift+b exec uzbl-tabbed 
+
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
+
+# Monitor Backlight controls
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5 #increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 #increase screen brightness
+
+# Keyboard Backlight controls
+bindsym XF86KbdBrightnessDown exec --no-startup-id sudo keyboard-backlight down
+bindsym XF86KbdBrightnessUp exec --no-startup-id sudo keyboard-backlight up 
+
+gaps inner 10
+bindsym Mod1+plus gaps inner all plus 5
+bindsym Mod1+minus gaps inner all minus 5
+bindsym Mod1+0 gaps inner all set 0
+
+for_window [title="FTerm"] floating enable
+bindsym $mod+Shift+Return exec urxvtc 
+
+for_window [title="MPV"] floating enable sticky enable move absolute position 1px 21px 
+
+#for_window [class="^.*"] border pixel 2
+
+
+# Custom Sparkles
+new_window none
+client.background #323a4e
